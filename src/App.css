@@ -2,41 +2,32 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+  text-align: left; /* Align text to the left to simulate a chat interface */
+  background-color: #f0f0f0; /* Light grey background */
 }
 
 .card {
   padding: 2em;
+  background-color: #fff; /* White background for the chat card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 8px; /* Rounded corners for the card */
+  margin-top: 2em; /* Space above the card */
+  margin-bottom: 2em; /* Space below the card */
 }
 
 .read-the-docs {
   color: #888;
+}
+
+/* Style for the paragraph displaying the chat messages */
+p {
+  background-color: #e1eaff; /* Light blue background similar to ChatGPT's bubble */
+  color: #333; /* Darker text for better readability */
+  font-size: 1rem; /* Standard font size */
+  line-height: 1.5; /* Line spacing for readability */
+  padding: 1em; /* Padding inside the text bubble */
+  border-radius: 15px; /* Rounded corners for the text bubble */
+  display: inline-block; /* Make the paragraph block align to the width of its content */
+  width: 600px; /* Max width to mimic chat bubble sizing */
+  letter-spacing: -1.5px;
 }
